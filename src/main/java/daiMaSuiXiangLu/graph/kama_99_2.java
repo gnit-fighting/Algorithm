@@ -34,6 +34,7 @@ public class kama_99_2 {
                 if(!visited[i][j] && grid[i][j]==1){
                     ans++;
                     queue.add(new int[]{i,j});
+                    visited[i][j] = true;
                     bfs();
                 }
             }
