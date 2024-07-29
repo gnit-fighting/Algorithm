@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Scanner;
 
 /**
- * 岛屿数量-bfs
+ * 岛屿的最大面积
  */
 public class kama_100 {
     static int[][] grid;
