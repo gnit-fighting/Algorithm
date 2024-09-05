@@ -58,6 +58,10 @@ public class kama_107 {
 
     //合并集合
     public static void join(int x, int y) {
+        //理解为什么join(x,y)的时候需要找到各自的根之后再建立连接
+        //为什么不能直接 father[y] = x?
+        //答：举例子 先join（1，2），再 join（3，2） 看看知道了
+        //直接 father[y] = x ： 结果是 1 和 3 就不同源了；
         int fx = find(x);
         int fy = find(y);
 
